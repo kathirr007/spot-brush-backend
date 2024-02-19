@@ -1,5 +1,5 @@
-# Spot-Brush UI
-### A collobarative Whiteboard
+# Spot-Brush Backend
+### Backend setup for A collobarative Whiteboard
 
 ## Build Setup
 
