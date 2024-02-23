@@ -424,13 +424,18 @@ async function start () {
   // Give nuxt middleware to express
   // app.use(nuxt.render)
 
-  const port = process.env.PORT || 5600
+  const port = process.env.PORT || 5500
 
   // Listen the server
   // server.listen(port, host)
 
   server.listen(port, () => {
-    console.log('Webserver & socketserver running on', server.address().port);
+    /* console.log('Webserver & socketserver running on', server.address().port); */
+    consola.ready({
+      message: `Webserver & socketserver running on  ${'http://localhost'}:${server.address().port
+      }`,
+      badge: true
+    })
   });
 
   /* consola.ready({
