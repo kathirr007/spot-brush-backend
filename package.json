@@ -6,6 +6,9 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
+    "prep": "npm install rimraf -g",
+    "rimraf": "./node_modules/rimraf/bin.js",
+    "clean": "yarn prep && rimraf node_modules",
     "dev": "nodemon index.js",
     "start": "nodemon index.js"
   },
