@@ -1,8 +1,8 @@
 import { fileURLToPath } from 'url';
 import path, { dirname } from 'path';
 import fs from "fs"
-import yaml from "js-yaml"
 import Ajv from "ajv"
+import yaml from "js-yaml"
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
