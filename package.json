@@ -9,8 +9,8 @@
     "prep": "npm install rimraf -g",
     "rimraf": "./node_modules/rimraf/bin.js",
     "clean": "yarn prep && rimraf node_modules",
-    "dev": "nodemon index.js",
-    "start": "nodemon index.js"
+    "dev": "nodemon --experimental-modules --es-module-specifier-resolution=node index.js",
+    "start": "nodemon --experimental-modules --es-module-specifier-resolution=node index.js"
   },
   "dependencies": {
     "ajv": "^8.12.0",
@@ -35,6 +35,7 @@
     "formidable": "^1.2.2",
     "fs-extra": "^9.0.1",
     "js-cookie": "^2.2.1",
+    "js-yaml": "^4.1.0",
     "jsdom": "^16.4.0",
     "jsonwebtoken": "^8.5.1",
     "jwk-to-pem": "^2.0.4",
@@ -48,7 +49,5 @@
     "vanilla-picker": "^2.10.1",
     "webdav": "^3.3.0"
   },
-  "devDependencies": {
-    "js-yaml": "^4.1.0"
-  }
+  "devDependencies": {}
 }

@@ -1,8 +1,8 @@
 import { fileURLToPath } from 'url';
 import path, { dirname } from 'path';
 import fs from "fs"
-import Ajv from "ajv"
 import yaml from "js-yaml"
+import Ajv from "ajv"
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -19,7 +19,7 @@ import configSchema from './config-schema.json' assert {type: 'json'};
  * @return {Object}
  */
 function getConfig(path) {
-    return yaml.safeLoad(fs.readFileSync(path, "utf8"));
+    return yaml.load(fs.readFileSync(path, "utf8"));
 }
 
 /**
