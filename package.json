@@ -32,7 +32,6 @@
     "formidable": "^1.2.2",
     "fs-extra": "^9.0.1",
     "js-cookie": "^2.2.1",
-    "js-yaml": "^3.14.0",
     "jsdom": "^16.4.0",
     "jsonwebtoken": "^8.5.1",
     "jwk-to-pem": "^2.0.4",
@@ -47,5 +46,6 @@
     "webdav": "^3.3.0"
   },
   "devDependencies": {
+    "js-yaml": "^4.1.0"
   }
 }
