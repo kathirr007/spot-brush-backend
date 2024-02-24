@@ -6,9 +6,9 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "prep": "npm install rimraf -g",
+    "prep": "node npm-prep-start.js && npm install rimraf -g && node npm-prep-end.js",
     "rimraf": "./node_modules/rimraf/bin.js",
-    "clean": "yarn prep && rimraf node_modules",
+    "clean": "node npm-clean.js && yarn prep && rimraf node_modules  && node npm-clean-end.js",
     "dev": "nodemon --experimental-modules --es-module-specifier-resolution=node index.js",
     "start": "nodemon --experimental-modules --es-module-specifier-resolution=node index.js"
   },
